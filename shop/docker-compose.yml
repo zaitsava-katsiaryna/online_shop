@@ -1,0 +1,43 @@
+version: '3.6'
+
+services:
+  #change these commented blocks to add your chosen database images as containers to your project
+
+  api:
+    #this tells docker where to look for the Dockerfile to build the image
+    build: ./api
+    depends_on:
+      - mongodb
+    #name of your container and also the DNS name (nginx will proxy pass to this container from localhost:8000 when using a browser or Postman)
+    container_name: api
+    restart: always
+    #EXPOSE defines the ports reachable from INSIDE your docker network
+    expose:
+      - 8000
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    restart: always
+    expose:
+      - 80
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    #PORTS defines ports reachable from the outside world, like a browser or other clients
+    ports:
+      - "5000:5000"
+      - "8001:8001"
+
+  mongodb:
+    image: mongo
+    restart: unless-stopped
+    # command: mongod --auth
+    environment:
+      MONGO_INITDB_DATABASE: "imse_mongo_db"
+      # MONGO_INITDB_ROOT_USERNAME: "user"
+      # MONGO_INITDB_ROOT_PASSWORD: "password"
+    ports:
+      - 27019:27017

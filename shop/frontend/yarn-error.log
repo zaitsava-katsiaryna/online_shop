@@ -1,0 +1,45 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js
+
+PATH: 
+  /Users/katsiarynazaitsava/Documents/!!!UniWien/6.SS2020/IMSE/milestone-2/frontend/node_modules/.bin:/Users/katsiarynazaitsava/Documents/!!!UniWien/6.SS2020/IMSE/milestone-2/node_modules/.bin:/Users/katsiarynazaitsava/Documents/!!!UniWien/6.SS2020/IMSE/node_modules/.bin:/Users/katsiarynazaitsava/Documents/!!!UniWien/6.SS2020/node_modules/.bin:/Users/katsiarynazaitsava/Documents/!!!UniWien/node_modules/.bin:/Users/katsiarynazaitsava/Documents/node_modules/.bin:/Users/katsiarynazaitsava/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/Users/katsiarynazaitsava/.npm/_npx/24635/bin:/Users/katsiarynazaitsava/node_modules/.bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/katsiarynazaitsava/Library/Android/sdk/platform-tools:/Users/katsiarynazaitsava/Library/Android/sdk/tools:/Library/TeX/texbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/katsiarynazaitsava/anaconda/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: [2K[1Ghttps://registry.yarnpkg.com/@vue%2fcli-plugin-babel: Invalid URI "[2K[1Ghttps://registry.yarnpkg.com/@vue%2fcli-plugin-babel"
+      at Request.module.exports.Request.init (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:129629:31)
+      at new Request (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:129483:8)
+      at request (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:126389:10)
+      at RequestManager.execute (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:66110:15)
+      at RequestManager.shiftQueue (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:66148:10)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:65827:13
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:5228:28)
+      at RequestManager.request (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:65825:19)
+      at NpmRegistry.<anonymous> (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:31610:42)
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "~4.3.0",
+      "@vue/cli-plugin-eslint": "~4.3.0",
+      "@vue/cli-service": "~4.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
